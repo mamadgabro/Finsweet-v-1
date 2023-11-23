@@ -1,0 +1,14 @@
+@import "./settings.css";
+/* Desktop size (index) */
+@import "./index/desktop/desktop.css" only screen and (min-width: 1201px);
+/* Tablet size (index) */
+@import "./index/tablet/tablet.css" only screen and (min-width: 769px) and (max-width: 1200px);
+/* Mobile size (index) */
+@import "./index/mobile/mobile.css" only screen and (max-width: 768px);
+/* Desktop size (about us) */
+@import "./about-us/desktop/desktop.css" only screen and (min-width: 1201px);
+/* Tablet size (about us) */
+@import "./about-us/tablet/tablet.css" only screen and (min-width: 769px) and (max-width:1200px);
+/* Mobile size (about us) */
+@import "./about-us/mobile/mobile.css" only screen and (max-width:768px);
+@import url(./anim.css);

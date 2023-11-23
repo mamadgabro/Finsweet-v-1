@@ -1,0 +1,17 @@
+@import "./header.css";
+@import "./hero.css";
+@import "./how-it-works.css";
+@import "./our-work.css";
+@import "./features.css";
+@import "./test.css";
+@import "./faq.css";
+@import "./contact.css";
+@import "./blog.css";
+@import "./footer.css";
+
+.wrapper {
+  max-width: 1600px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+}

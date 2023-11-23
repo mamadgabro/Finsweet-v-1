@@ -1,0 +1,65 @@
+@import "../../functions";
+// our team
+div.team {
+  @include WH(100%, auto);
+  background-color: var(--Grey);
+  div.wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @include FC();
+    row-gap: 28px;
+    max-width: 500px;
+    > p {
+      color: var(--Dark-blue);
+      text-align: center;
+      font-family: Poppins;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 48px; /* 133.333% */
+    }
+    div.cards {
+      @include WH(100%, auto);
+      @include FR();
+      flex-wrap: wrap;
+      column-gap: 12px;
+      justify-content: center;
+      row-gap: 12px;
+      div {
+        @include WH(45%, auto);
+        @include FC();
+        align-items: center;
+        padding: 14px;
+        transition: 300ms;
+        position: relative;
+        background-color: var(--White);
+        img {
+          @include WH(90%, auto);
+          max-width: 168px;
+          min-width: 0;
+        }
+        p.one {
+          color: var(#1d2130);
+          text-align: center;
+          font-family: Poppins;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px; /* 150% */
+          margin-top: 20px;
+        }
+        p.two {
+          color: var(#1d2130);
+          text-align: center;
+          font-family: Poppins;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 16px; /* 175% */
+          opacity: 0.7;
+          margin-top: 6px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+@import "../../functions";
+// benefits
+div.benefits {
+  @include WH(100%, auto);
+  div.wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 300px;
+    @include FC();
+    align-items: center;
+    row-gap: 48px;
+    > p {
+      color: var(--Dark-blue);
+      text-align: center;
+      font-family: Poppins;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 46px; /* 133.333% */
+      max-width: 500px;
+    }
+    div.cards {
+      @include WH(100%, auto);
+      @include FC();
+      row-gap: 22px;
+      div {
+        @include WH(100%, auto);
+        @include FC();
+        background-color: var(--Grey);
+        padding: 20px;
+        img {
+          @include WH(25px, 25px);
+        }
+        p.one {
+          color: var(--Dark-blue);
+          font-family: Poppins;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 36px; /* 150% */
+          margin-top: 18px;
+          margin-bottom: 12px;
+        }
+        p.two {
+          color: var(--Dark-blue);
+          font-family: Poppins;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 22px; /* 175% */
+          opacity: 0.7;
+        }
+      }
+    }
+    div.users {
+      @include WH(100%, auto);
+      @include FC();
+      align-items: center;
+      row-gap: 30px;
+      div.ten {
+        @include WH(180px, auto);
+        @include FC();
+        justify-content: center;
+        p.one {
+          color: var(--Dark-blue);
+          font-family: Poppins;
+          font-size: 26px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 40px; /* 147.368% */
+          text-align: center;
+        }
+        p.two {
+          color: var(--Dark-blue);
+          font-family: Poppins;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px; /* 175% */
+          opacity: 0.7;
+          text-align: center;
+        }
+      }
+      div.logos {
+        @include WH(100%, auto);
+        @include FR();
+        column-gap: 10px;
+        row-gap: 10px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        img {
+          @include WH(80px, auto);
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
